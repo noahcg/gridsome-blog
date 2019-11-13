@@ -4,6 +4,9 @@ description: "The difficulties I encountered while trying to install Jekyll"
 date: 2019-11-05 10:05:17
 author: Noah Glushien
 tags: ["lighthouse"]
+cover: ""
+slug: ""
+fullscreen: false
 ---
 
 Over the last several years, the US Holocaust Memorial Museum has been making efforts to bring all of their web and application development in house. Previously, they had been outsourcing their work for custom projects to external design agencies. Although it was an ambitious goal, the museum knew that in order to achieve it they would need to bring in additional people to add to the list of talented designers and developers they already had. I was the most recent addition to what was to become my current team. I was brought on board in 2017 in the midst of a large department reorganization. By 2018 a new department had formed that would be responsible for, among many things, handling all of the museum’s web design and development needs. This new department is called Museum Experience and Digital Media, or MEDM for short.

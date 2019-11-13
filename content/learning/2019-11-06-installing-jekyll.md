@@ -4,6 +4,9 @@ description: "The difficulties I encountered while trying to install Jekyll"
 date: 2019-11-06 10:05:17
 author: Noah Glushien
 tags: ["jekyll"]
+cover: ""
+slug: ""
+fullscreen: false
 ---
 
 Wow, was that a pain in the neck. I honestly had no idea that installing Jekyll was going to be so complicated. I also don't know anything about ruby and it _may_ have helped if I did. But I followed the exact steps that are shown in the quick start instructions on the Jekyll homepage. So why didn't it work?
