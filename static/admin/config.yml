@@ -12,15 +12,21 @@ collections:
       fields: # The fields for each document, usually in front matter
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "hidden" }
-          - { label: "Date", name: "date", widget: "hidden", default: "" }
-          - { label: "Author", name: "author", widget: "hidden" }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Author", name: "author", widget: "string", default: "Noah Glushien" }
           - { label: "Tags", name: "tags", widget: "list" }
-          - { label: "Cover Image", name: "cover", widget: "image" }
+          - {
+                label: "Cover Image",
+                name: "cover",
+                widget: "image",
+                required: false,
+            }
           - {
                 label: "Full Screen",
                 name: "fullscreen",
                 widget: "boolean",
                 default: false,
+                required: false,
             }
           - { label: "Slug", name: "slug", widget: "hidden" }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -32,15 +38,21 @@ collections:
       fields: # The fields for each document, usually in front matter
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "hidden" }
-          - { label: "Date", name: "date", widget: "hidden", default: "" }
-          - { label: "Author", name: "author", widget: "hidden" }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Author", name: "author", widget: "string", default: "Noah Glushien" }
           - { label: "Tags", name: "tags", widget: "list" }
-          - { label: "Cover Image", name: "cover", widget: "image" }
+          - {
+                label: "Cover Image",
+                name: "cover",
+                widget: "image",
+                required: false,
+            }
           - {
                 label: "Full Screen",
                 name: "fullscreen",
                 widget: "boolean",
                 default: false,
+                required: false,
             }
           - { label: "Slug", name: "slug", widget: "hidden" }
           - { label: "Body", name: "body", widget: "markdown" }
