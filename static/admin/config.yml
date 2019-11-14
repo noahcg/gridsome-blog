@@ -11,7 +11,18 @@ collections:
       slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
       fields: # The fields for each document, usually in front matter
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Featured Image", name: "cover", widget: "image" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime", default: "" }
+          - { label: "Author", name: "author", widget: "string" }
+          - { label: "Tags", name: "tags", widget: "list" }
+          - { label: "Cover Image", name: "cover", widget: "image" }
+          - {
+                label: "Full Screen",
+                name: "fullscreen",
+                widget: "boolean",
+                default: false,
+            }
+          - { label: "Slug", name: "slug", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
     - name: "opinions" # Used in routes, e.g., /admin/collections/blog
       label: "Opinions" # Used in the UI
@@ -20,5 +31,16 @@ collections:
       slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
       fields: # The fields for each document, usually in front matter
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Featured Image", name: "cover", widget: "image" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime", default: "" }
+          - { label: "Author", name: "author", widget: "string" }
+          - { label: "Tags", name: "tags", widget: "list" }
+          - { label: "Cover Image", name: "cover", widget: "image" }
+          - {
+                label: "Full Screen",
+                name: "fullscreen",
+                widget: "boolean",
+                default: false,
+            }
+          - { label: "Slug", name: "slug", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
