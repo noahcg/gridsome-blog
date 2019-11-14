@@ -1,5 +1,10 @@
 ---
 title: Clearing Up the Confusion Around .bashrc and .bash_profile
+date: 2019-11-14T17:03:08.663Z
+author: Noah Glushien
+tags:
+  - bash
+  - jekyll
 cover: /uploads/sai-kiran-anagani-tjbk79tarie-unsplash.jpg
 ---
 
