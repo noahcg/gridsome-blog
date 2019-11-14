@@ -1,12 +1,6 @@
 ---
-title: "Clearing Up the Confusion Around .bashrc and .bash_profile"
-description: "The difficulties I encountered while trying to install Jekyll"
-date: 2019-11-07 10:05:17
-author: Noah Glushien
-tags: ["bash"]
-cover: ""
-slug: ""
-fullscreen: false
+title: Clearing Up the Confusion Around .bashrc and .bash_profile
+cover: /uploads/sai-kiran-anagani-tjbk79tarie-unsplash.jpg
 ---
 
 After running into issues with my Jekyll install, I really wanted to clear up the confusion I had around my .bashrc and .bash*profile files. During my jekyll install, I was running commands that I knew was going to modify either one, or both, of those files. And I ran them not knowing exactly what they were doing. \_I know, I know. That's really stupid of me*. So today I did some research and here is what I found.
