@@ -8,8 +8,8 @@ module.exports = {
   siteName: "Noah Glushien",
   siteDescription:
     "I'm a front end developer and web accessibility advocate. This site is a place for me to write about anything and everything industry related.",
-  siteUrl: "https://gridsome-starter-bleda.netlify.com",
-  titleTemplate: `%s | Bleda`,
+  siteUrl: "https://noahcg-blog.netlify.com",
+  titleTemplate: `%s`,
   icon: "src/favicon.png",
 
   transformers: {
@@ -46,12 +46,6 @@ module.exports = {
       }
     },
     {
-      use: "@gridsome/plugin-google-analytics",
-      options: {
-        id: "UA-135446199-1"
-      }
-    },
-    {
       use: "@gridsome/plugin-sitemap",
       options: {
         cacheTime: 600000 // default
@@ -64,13 +58,13 @@ module.exports = {
         feedOptions: {
           title:
             "Noah Glushien, Front End Developer | Web Accessibility Advocate",
-          feed_url: "https://gridsome-starter-bleda.netlify.com/feed.xml",
-          site_url: "https://gridsome-starter-bleda.netlify.com"
+          feed_url: "https://noahcg-blog.netlify.com/feed.xml",
+          site_url: "https://noahcg-blog.netlify.com"
         },
         feedItemOptions: node => ({
           title: node.title,
           description: node.description,
-          url: "https://gridsome-starter-bleda.netlify.com/" + node.slug,
+          url: "https://noahcg-blog.netlify.com/" + node.slug,
           author: node.author,
           date: node.date
         }),
