@@ -13,7 +13,12 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "hidden" }
           - { label: "Date", name: "date", widget: "datetime" }
-          - { label: "Author", name: "author", widget: "string", default: "Noah Glushien" }
+          - {
+                label: "Author",
+                name: "author",
+                widget: "string",
+                default: "Noah Glushien",
+            }
           - { label: "Tags", name: "tags", widget: "list" }
           - {
                 label: "Cover Image",
@@ -39,7 +44,12 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "hidden" }
           - { label: "Date", name: "date", widget: "datetime" }
-          - { label: "Author", name: "author", widget: "string", default: "Noah Glushien" }
+          - {
+                label: "Author",
+                name: "author",
+                widget: "string",
+                default: "Noah Glushien",
+            }
           - { label: "Tags", name: "tags", widget: "list" }
           - {
                 label: "Cover Image",
