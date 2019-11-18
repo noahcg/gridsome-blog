@@ -5,10 +5,10 @@ author: Noah Glushien
 tags:
   - bash
   - jekyll
-cover: /uploads/sai-kiran-anagani-tjbk79tarie-unsplash.jpg
+cover: ''
 ---
 
-After running into issues with my Jekyll install, I really wanted to clear up the confusion I had around my .bashrc and .bash*profile files. During my jekyll install, I was running commands that I knew was going to modify either one, or both, of those files. And I ran them not knowing exactly what they were doing. \_I know, I know. That's really stupid of me*. So today I did some research and here is what I found.
+After running into issues with my Jekyll install, I really wanted to clear up the confusion I had around my .bashrc and .bash\_profile files. During my jekyll install, I was running commands that I knew was going to modify either one, or both, of those files. And I ran them not knowing exactly what they were doing. _I know, I know. That's really stupid of me_. So today I did some research and here is what I found.
 
 ## What are the .bashrc and .bash_profile files?
 
