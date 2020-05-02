@@ -28,6 +28,7 @@ module.exports = {
   },
 
   plugins: [
+    "/plugins/projects.server.js",
     {
       use: "@gridsome/source-filesystem",
       options: {
