@@ -1,26 +1,43 @@
 <template>
   <Layout>
     <main>
-      <header
-        class="max-w-xl md:max-w-2xl xl:max-w-3xl mx-auto text-center px-6 pt-24"
-      >
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-1">
+      <header class="mx-auto py-4 text-left">
+        <h1 class="text-3xl sm:text-4xl leading-tight font-sans font-bold mb-2">
           Projects
         </h1>
-        <!-- <p class="text-grey-dark text-lg sm:text-3xl">Lorem ipsum subtitle &hellip;</p> -->
       </header>
-      <nav class="absolute top-0 left-0 z-20 mt-6 ml-6">
-        <g-link
-          to="/"
-          class="text-gray-900 border-gray-400 text-sm border opacity-75 hover:opacity-100 rounded-full px-4 py-2 transition-opacity"
-          >&larr; Home</g-link
-        >
-      </nav>
-      <section class="work-related">
-        <h2>Recent Work</h2>
+
+      <section class="font-sans text-md leading-normal list-none pb-5 pt-4">
+        <h2 class="font-bold my-4 text-2xl">Articles</h2>
         <ul>
           <li>
-            <h3>Early Warning Project</h3>
+            <h3 class="font-bold mb-4 mt-8 text-xl">
+              <a href="" class="default-link">Being a Colorblind Designer</a> -
+              A List Apart
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Obcaecati est saepe omnis ea a nobis quibusdam unde eius! Commodi
+              voluptates asperiores sit, at sequi perferendis molestias atque
+              porro debitis assumenda ipsa unde repellendus nulla inventore
+              blanditiis! Odit earum ipsam facere!
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="font-sans text-md leading-normal list-none pb-5 pt-4">
+        <h2 class="font-bold my-4 text-2xl">Recent Work</h2>
+        <ul>
+          <li>
+            <h3 class="font-bold mb-4 mt-8 text-xl">
+              <a
+                class="default-link"
+                href="https://earlywarningproject.ushmm.org/"
+                target="_blank"
+                >Early Warning Project</a
+              >
+            </h3>
             <p>
               The Early Warning Project, a first-of-its-kind public system, is a
               joint initiative of the Simon-Skjodt Center for the Prevention of
@@ -31,36 +48,34 @@
               of mass atrocities and, as a result, greater opportunities to take
               preventive action.
             </p>
-            <a
-              class="default-link"
-              href="https://earlywarningproject.ushmm.org/"
-              target="_blank"
-              >Project Link</a
-            >
           </li>
           <li>
-            <h3>Americans and the Holocaust</h3>
+            <h3 class="font-bold mb-4 mt-8 text-xl">
+              <a
+                class="default-link"
+                href="https://exhibitions.ushmm.org/americans-and-the-holocaust/main"
+                target="_blank"
+                >Americans and the Holocaust</a
+              >
+            </h3>
             <p>
               This online exhibition examines the motives, pressures, and fears
               that shaped Americans’ responses to Nazism, war, and genocide.
             </p>
-            <a
-              class="default-link"
-              href="https://exhibitions.ushmm.org/americans-and-the-holocaust/main"
-              target="_blank"
-              >Project Link</a
-            >
           </li>
         </ul>
       </section>
-      <section class="personal-projects">
-        <h2>Personal Github Repos</h2>
+      <section class="font-sans text-md leading-normal list-none pb-10 pt-4">
+        <h2 class="font-bold my-4 text-2xl">Personal Github Repos</h2>
         <p>These are my personal projects</p>
         <ul>
           <li v-for="project in githubProjects" :key="project.id">
-            <h3>{{ project.name }}</h3>
+            <h3 class="font-bold mb-4 mt-8 text-xl">
+              <a class="default-link" :href="project.html_url">{{
+                project.name
+              }}</a>
+            </h3>
             <p>{{ project.description }}</p>
-            <a class="default-link" :href="project.html_url">Repo Link</a>
           </li>
         </ul>
       </section>
@@ -120,30 +135,3 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
-@import "../assets/mixins";
-h1 {
-  @include page-title;
-}
-.work-related,
-.personal-projects {
-  ul {
-    list-style: none;
-    padding: 0;
-
-    li {
-      margin-bottom: 40px;
-    }
-  }
-  h2,
-  h3 {
-    margin-bottom: 0;
-  }
-
-  h3 + p {
-    font-weight: 300;
-    margin-bottom: 5px;
-    margin-top: 0;
-  }
-}
-</style>
