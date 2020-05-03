@@ -1,5 +1,5 @@
 <template>
-  <header class="site-header">
+  <header class="site-header justify-between">
     <p>
       Noah Glushien <br />
       <span>Front End Developer / Accessibility Advocate</span>
@@ -11,6 +11,9 @@
         </li>
         <li>
           <g-link to="/projects">Projects</g-link>
+        </li>
+        <li>
+          <g-link to="/blog">Blog</g-link>
         </li>
         <li>
           <g-link to="/about">About</g-link>
@@ -25,8 +28,6 @@ export default {};
 </script>
 
 <style lang="scss">
-// @import "~assets/variables";
-
 .site-header {
   border-bottom: 1px solid #eee;
   margin-bottom: 20px;
@@ -61,18 +62,18 @@ header {
     }
   }
 }
+@media (min-width: 1200px) {
+  .site-header {
+    display: flex;
+    padding-bottom: 20px;
 
-// @media (min-width: 768px) {
-//   header {
-//     // display: flex;
-//     // flex-direction: row;
-//     // justify-content: space-between;
+    p {
+      width: 60%;
+    }
 
-//     nav {
-//       height: 100px;
-//       justify-content: flex-end;
-//       width: 50%;
-//     }
-//   }
-// }
+    nav {
+      width: auto;
+    }
+  }
+}
 </style>

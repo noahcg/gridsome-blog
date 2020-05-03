@@ -5,49 +5,25 @@
     <div class="w-full sm:w-1/2 mb-4 sm:mb-0">
       <p>
         Built with
-        <a
-          href="https://gridsome.org"
-          class="border-b border-transparent hover:border-gray-400 transition-border-color"
-          >Gridsome</a
-        >
+        <a href="https://gridsome.org">Gridsome</a>
         &amp;
-        <a
-          href="https://tailwindcss.com/"
-          class="border-b border-transparent hover:border-gray-400 transition-border-color"
-          >Tailwind CSS</a
-        >.
+        <a href="https://tailwindcss.com/">Tailwind CSS</a>.
       </p>
     </div>
     <div class="w-full sm:w-1/2">
       <nav>
         <ul class="flex sm:justify-end -mx-2">
           <li class="px-2">
-            <g-link
-              to="/"
-              class="border-b border-transparent hover:border-gray-400 transition-border-color"
-              >Home</g-link
-            >
+            <g-link to="/">Home</g-link>
           </li>
           <li class="px-2">
-            <g-link
-              to="/about/"
-              class="border-b border-transparent hover:border-gray-400 transition-border-color"
-              >About</g-link
-            >
+            <g-link to="/about/">About</g-link>
           </li>
           <li class="px-2">
-            <a
-              href="/sitemap.xml"
-              class="border-b border-transparent hover:border-gray-400 transition-border-color"
-              >Sitemap</a
-            >
+            <a href="/sitemap.xml">Sitemap</a>
           </li>
           <li class="px-2">
-            <a
-              href="/feed.xml"
-              class="border-b border-transparent hover:border-gray-400 transition-border-color"
-              >RSS Feed</a
-            >
+            <a href="/feed.xml">RSS Feed</a>
           </li>
         </ul>
       </nav>

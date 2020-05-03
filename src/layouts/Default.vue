@@ -23,7 +23,6 @@ export default {
 
 <style src="~/assets/css/main.css"></style>
 <style lang="scss">
-@import "~/assets/_variables.scss";
 html {
   box-sizing: border-box;
   color: #eee;
@@ -40,21 +39,20 @@ html {
 a,
 a:visited,
 a:active {
-  color: $link-color;
-  font-family: $link-font;
+  color: var(--link-color);
+  font-family: var(--link-font);
   position: relative;
   text-decoration: none;
 
-  &.default-link {
-    box-shadow: inset 0 -0.475em 0 darken(rgba(61, 77, 93, 0.5), 40%);
-    padding: 2px 5px;
-    transition: all 200ms 50ms ease;
+  box-shadow: inset 0 -0.475em 0 darken(rgba(61, 77, 93, 0.5), 40%);
+  padding: 2px 5px;
+  transition: all 200ms 50ms ease;
 
-    &:hover,
-    &:focus {
-      background-color: darken(rgba(61, 77, 93, 0.5), 40%);
-      box-shadow: inset 0 -0.475em 0 transparent;
-    }
+  &:hover,
+  &:focus {
+    background-color: darken(rgba(61, 77, 93, 0.5), 40%);
+    box-shadow: inset 0 -0.475em 0 transparent;
+    outline: none;
   }
 }
 

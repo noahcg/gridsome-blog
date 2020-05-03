@@ -2,13 +2,16 @@
   <Layout>
     <main>
       <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ut!
-          Facere corporis et iste modi earum porro molestiae dignissimos
-          quisquam magnam explicabo animi harum atque incidunt repellat
-          accusamus, sit pariatur.
-        </p>
+        <post-item
+          v-for="edge in $page.posts.edges"
+          :key="edge.node.id"
+          :post="edge.node"
+        />
       </section>
+      <pagination
+        :info="$page.posts.pageInfo"
+        v-if="$page.posts.pageInfo.totalPages > 1"
+      />
       <site-footer class="py-8 sm:py-16" />
     </main>
   </Layout>
@@ -61,6 +64,42 @@ export default {
   }
 };
 </script>
+
+<page-query>
+  query Home ($page: Int) {
+    posts: allPost (page: $page, perPage: 6) @paginate {
+      totalCount
+      pageInfo {
+        totalPages
+        currentPage
+      }
+      edges {
+        node {
+          id
+          title
+          timeToRead
+          datetime: date (format: "YYYY-MM-DD HH:mm:ss")
+          content
+          excerpt
+          description
+          path
+          cover
+          tags {
+            id
+            title
+            path
+          }
+          author {
+            id
+            title
+            path
+          }
+        }
+      }
+    }
+  }
+</page-query>
+
 <static-query>
 query {
   metadata {
