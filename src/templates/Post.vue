@@ -32,7 +32,7 @@
               v-for="tag in $page.post.tags"
               :key="tag.id"
               :to="`${tag.path}/`"
-              class="inline-block text-teal-400 hover:text-white hover:bg-teal-400 border border-teal-400 font-sans font-bold text-xs sm:text-sm px-4 py-2 mr-4 mb-2 rounded-full transition-color transition-bg"
+              class="inline-block text-xs sm:text-sm px-4 py-2 mr-4 mb-2"
             >
               <svg
                 class="inline w-3 fill-current align-middle mr-1"
@@ -47,7 +47,7 @@
               {{ tag.title }}
             </g-link>
           </div>
-          <div
+          <!-- <div
             v-if="$page.post.author"
             class="flex flex-wrap items-center justify-center sm:justify-left border-t border-b border-gray-300 w-full mt-10 py-10 sm:px-16"
           >
@@ -81,7 +81,7 @@
                 >
               </p>
             </div>
-          </div>
+          </div> -->
         </footer>
       </article>
 

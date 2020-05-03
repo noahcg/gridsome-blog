@@ -70,14 +70,14 @@
     </div>
     <nav class="absolute top-0 left-0 z-20">
       <g-link
-        to="/"
+        to="/blog"
         :class="[
           post.cover
             ? 'text-white border-white'
             : 'text-gray-900 border-gray-400'
         ]"
-        class="text-sm border opacity-75 hover:opacity-100 rounded-full px-4 py-2 transition-opacity"
-        >&larr; Home</g-link
+        class="text-sm px-4 py-2"
+        >&larr; Blog</g-link
       >
     </nav>
   </header>

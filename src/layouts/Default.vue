@@ -25,8 +25,8 @@ export default {
 <style lang="scss">
 html {
   box-sizing: border-box;
-  color: #eee;
-  font-family: "Roboto", sans-serif;
+  color: #e6e9ea;
+  // font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   height: 100%;
@@ -36,9 +36,8 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-a,
-a:visited,
-a:active {
+a:not([href^="#"]),
+a:active:not([href^="#"]) {
   color: var(--link-color);
   font-family: var(--link-font);
   position: relative;
@@ -52,8 +51,16 @@ a:active {
   &:focus {
     background-color: darken(rgba(61, 77, 93, 0.5), 40%);
     box-shadow: inset 0 -0.475em 0 transparent;
+    color: var(--link-color);
     outline: none;
   }
+}
+
+a:visited:not([href^="#"]) {
+  background-color: darken(rgba(61, 77, 93, 0.5), 40%);
+  box-shadow: inset 0 -0.475em 0 transparent;
+  color: var(--link-color);
+  outline: none;
 }
 
 body {

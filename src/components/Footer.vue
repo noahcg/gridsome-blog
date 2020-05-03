@@ -13,16 +13,16 @@
     <div class="w-full sm:w-1/2">
       <nav>
         <ul class="flex sm:justify-end -mx-2">
-          <li class="px-2">
+          <li class="px-1 md:px-2">
             <g-link to="/">Home</g-link>
           </li>
-          <li class="px-2">
+          <li class="px-1 md:px-2">
             <g-link to="/about/">About</g-link>
           </li>
-          <li class="px-2">
+          <li class="px-1 md:px-2">
             <a href="/sitemap.xml">Sitemap</a>
           </li>
-          <li class="px-2">
+          <li class="px-1 md:px-2">
             <a href="/feed.xml">RSS Feed</a>
           </li>
         </ul>

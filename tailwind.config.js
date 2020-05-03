@@ -127,7 +127,7 @@ module.exports = {
         900: "#702459"
       },
       blackContrast: {
-        100: "#B2B6C7"
+        100: "#E6E9EA"
       },
       linkColor: {
         100: "#cfcefc"
