@@ -1,13 +1,41 @@
 <template>
   <Layout>
     <main>
-      <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ut!
-          Facere corporis et iste modi earum porro molestiae dignissimos
-          quisquam magnam explicabo animi harum atque incidunt repellat
-          accusamus, sit pariatur.
-        </p>
+      <section class="font-sans text-md leading-normal list-none pb-5 pt-4">
+        <h1 class="leading-none mb-8 text-4xl">As a Front End Developer...</h1>
+        <div class="callout mb-8">
+          <p class="mb-2 text-xl">
+            I <span class="leading-tight text-3xl">Build</span> custom user
+            interfaces and web layouts
+          </p>
+          <p class="text-sm">
+            I write HTML, CSS and Javascript using Vue, Bootstrap-vue, Vuetify,
+            Tailwind, and Gridsome. Most of my personal projects are hosted on
+            Netlify. Occassionally I still enjoy writing code without any
+            frameworks, just pure <em>vanilla</em>.
+          </p>
+        </div>
+        <div class="callout mb-8">
+          <p class="mb-2 text-2xl">
+            I <span class="leading-tight text-3xl">Write</span> articles and
+            blog posts
+          </p>
+          <p class="text-sm">
+            My hope is to help others in the web community learn new things. And
+            to also give back to the community that has taught be so much.
+          </p>
+        </div>
+        <div class="callout mb-4">
+          <p class="mb-2 text-2xl">
+            I <span class="leading-tight text-3xl">Advocate</span> for
+            accessible design and development
+          </p>
+          <p class="text-sm">
+            I promote proper accessible design and development best practices. I
+            also to try teach, or otherwise educate, designers and developers
+            how to create products with accessibility in mind.
+          </p>
+        </div>
       </section>
       <site-footer class="py-8 sm:py-16" />
     </main>
