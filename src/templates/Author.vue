@@ -7,7 +7,9 @@
         >
           <h1
             class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-2 capitalize"
-          >{{ titleCase($page.author.title) }}</h1>
+          >
+            {{ titleCase($page.author.title) }}
+          </h1>
           <svg
             class="w-5 sm:w-6 fill-current text-gray-500 mx-auto mb-1"
             xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +27,8 @@
           <g-link
             to="/"
             class="text-sm border text-gray-900 border-gray-400 opacity-75 hover:opacity-100 rounded-full px-4 py-2 transition-opacity"
-          >&larr; Home</g-link>
+            >&larr; Home</g-link
+          >
         </nav>
       </header>
       <section>
@@ -118,7 +121,7 @@ export default {
       return config;
     },
     ogImageUrl() {
-      return `${this.config.siteUrl}/images/bleda-card.png`;
+      return `${this.config.siteUrl}/images/default.jpg`;
     }
   }
 };

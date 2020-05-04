@@ -110,7 +110,7 @@ export default {
           content: "Introduction to the Bleda blog starter for Gridsome."
         },
         { property: "og:url", content: `${this.config.siteUrl}/about/` },
-        { property: "og:image", content: "/images/bleda-card.png" },
+        { property: "og:image", content: "/images/default.jpg" },
 
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: "Projects" },
@@ -120,7 +120,7 @@ export default {
         },
         { name: "twitter:site", content: "@cossssmin" },
         { name: "twitter:creator", content: "@cossssmin" },
-        { name: "twitter:image", content: "/images/bleda-card.png" }
+        { name: "twitter:image", content: "/images/default.jpg" }
       ]
     };
   },

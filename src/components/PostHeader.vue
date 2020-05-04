@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div
+    <!-- <div
       v-if="post.cover"
       class="post-cover overflow-hidden relative"
       :class="[post.fullscreen ? 'fullscreen' : 'max-h-cover']"
@@ -44,8 +44,8 @@
           <img :src="post.cover" :alt="post.title" />
         </parallax>
       </ClientOnly>
-    </div>
-    <div v-else class="pt-20">
+    </div> -->
+    <div class="pt-20">
       <div class="max-w-xl md:max-w-3xl xl:max-w-4xl mx-auto text-center">
         <p class="text-blackContrast-100 text-xs mb-2 uppercase">
           {{ post.timeToRead }} min read

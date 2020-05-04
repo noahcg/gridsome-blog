@@ -192,7 +192,7 @@ export default {
     },
     ogImageUrl() {
       return (
-        this.$page.post.cover || `${this.config.siteUrl}/images/bleda-card.png`
+        this.$page.post.cover || `${this.config.siteUrl}/images/default.jpg`
       );
     }
   }

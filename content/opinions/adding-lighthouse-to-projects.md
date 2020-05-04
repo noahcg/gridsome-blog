@@ -4,7 +4,7 @@ description: "The difficulties I encountered while trying to install Jekyll"
 date: 2019-11-05 10:05:17
 author: Noah Glushien
 tags: ["lighthouse"]
-cover: ""
+cover: "/images/posts/lighthouse@2x.jpg"
 slug: ""
 fullscreen: false
 ---
