@@ -1,30 +1,11 @@
 <template>
   <Layout>
     <main>
-      <header class="mx-auto py-4 text-left">
-        <h1 class="text-3xl sm:text-4xl leading-tight font-sans font-bold mb-2">
+      <header class="mx-auto pb-0 pt-4 text-left">
+        <h1 class="text-3xl sm:text-4xl leading-tight font-sans font-bold">
           Projects
         </h1>
       </header>
-
-      <section class="font-sans text-md leading-normal list-none pb-5 pt-4">
-        <h2 class="font-bold my-4 text-2xl">Articles</h2>
-        <ul>
-          <li>
-            <h3 class="font-bold mb-4 mt-8 text-xl">
-              <a href="" class="default-link">Being a Colorblind Designer</a> -
-              A List Apart
-            </h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Obcaecati est saepe omnis ea a nobis quibusdam unde eius! Commodi
-              voluptates asperiores sit, at sequi perferendis molestias atque
-              porro debitis assumenda ipsa unde repellendus nulla inventore
-              blanditiis! Odit earum ipsam facere!
-            </p>
-          </li>
-        </ul>
-      </section>
 
       <section class="font-sans text-md leading-normal list-none pb-5 pt-4">
         <h2 class="font-bold my-4 text-2xl">Recent Work</h2>
