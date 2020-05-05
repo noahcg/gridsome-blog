@@ -1,10 +1,16 @@
 <template>
-  <header class="site-header justify-between">
-    <p>
-      Noah Glushien <br />
-      <span>Front End Developer / Accessibility Advocate</span>
-    </p>
-    <nav>
+  <header
+    class="site-header border-solid border-b border-blackContrast-100 justify-between my-8 pb-4 xl:flex"
+  >
+    <div class="header-content">
+      <p class="mb-2 mt-0">
+        Noah Glushien
+      </p>
+      <p class="text-sm m-0 leading-snug">
+        Front End Developer / Writer / Accessibility Advocate
+      </p>
+    </div>
+    <nav class="sm:flex sm:flex-column">
       <ul>
         <li>
           <g-link to="/">Home</g-link>
@@ -16,7 +22,7 @@
           <g-link to="/blog">Blog</g-link>
         </li>
         <li>
-          <g-link to="/about">About</g-link>
+          <g-link to="/articles">Articles</g-link>
         </li>
       </ul>
     </nav>
@@ -29,9 +35,9 @@ export default {};
 
 <style lang="scss">
 .site-header {
-  border-bottom: 1px solid #eee;
-  margin-bottom: 20px;
-  margin-top: 30px;
+  // border-bottom: 1px solid #eee;
+  // margin-bottom: 20px;
+  // margin-top: 30px;
 }
 
 header {
@@ -48,7 +54,6 @@ header {
   nav {
     align-items: center;
     display: flex;
-    width: 100%;
 
     ul {
       margin: 1em 0;
@@ -62,18 +67,18 @@ header {
     }
   }
 }
-@media (min-width: 1200px) {
-  .site-header {
-    display: flex;
-    padding-bottom: 20px;
+// @media (min-width: 1200px) {
+//   .site-header {
+//     display: flex;
+//     padding-bottom: 20px;
 
-    p {
-      width: 60%;
-    }
+//     p {
+//       width: 60%;
+//     }
 
-    nav {
-      width: auto;
-    }
-  }
-}
+//     nav {
+//       width: auto;
+//     }
+//   }
+// }
 </style>
