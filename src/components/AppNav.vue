@@ -22,7 +22,7 @@
           <g-link to="/blog">Blog</g-link>
         </li>
         <li>
-          <g-link to="/articles">Articles</g-link>
+          <g-link to="/writing">Writing</g-link>
         </li>
       </ul>
     </nav>

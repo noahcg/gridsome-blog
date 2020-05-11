@@ -5,8 +5,12 @@ export default function(Vue, { head, appOptions }) {
   Vue.component("Layout", DefaultLayout);
   Vue.use(Vuex);
 
-  head.htmlAttrs = { lang: "en", class: "h-full" };
-  head.bodyAttrs = { class: "antialiased font-sans-serif" };
+  head.htmlAttrs = {
+    lang: "en",
+    class:
+      "border-box font-normal h-full leading-normal text-base text-blackContrast-100"
+  };
+  head.bodyAttrs = { class: "antialiased font-sans-serif h-full m-0 p-0" };
 
   head.link.push({
     rel: "stylesheet",

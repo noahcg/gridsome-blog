@@ -15,6 +15,8 @@ module.exports = {
       black: "#22292f",
       white: "#fff",
 
+      appbkg: "rgba(0,0,0,.5)",
+
       gray: {
         100: "#f7fafc",
         200: "#edf2f7",
