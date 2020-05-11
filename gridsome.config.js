@@ -10,7 +10,7 @@ module.exports = {
     "I'm a front end developer and web accessibility advocate. This site is a place for me to write about anything and everything industry related.",
   siteUrl: "https://noahcg-blog.netlify.com",
   titleTemplate: `%s`,
-  icon: "src/favicon.png",
+  icon: "./src/favicon.png",
 
   transformers: {
     remark: {
@@ -28,6 +28,7 @@ module.exports = {
   },
 
   plugins: [
+    "/plugins/projects.server.js",
     {
       use: "@gridsome/source-filesystem",
       options: {

@@ -1,22 +1,42 @@
 <template>
-  <Layout class="bg-white">
+  <Layout>
     <main>
-      <header>
-        <div
-          class="max-w-xl md:max-w-3xl xl:max-w-4xl mx-auto text-center px-6 py-10 md:pt-32 md:pb-16 border-b border-gray-300"
-        >
-          <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-0">
-            <g-link to="/" class="text-black">Noah Glushien</g-link>
-          </h1>
-          <p
-            class="text-gray-700 text-lg sm:text-3xl"
-          >Thoughts, opinions, and learning...</p>
+      <section class="font-sans text-md leading-normal list-none pb-5 pt-4">
+        <h1 class="leading-none mb-8 text-4xl">As a Front End Developer...</h1>
+        <div class="callout mb-8">
+          <p class="mb-2 text-xl">
+            I <span class="leading-tight text-3xl">Build</span> custom user
+            interfaces and web layouts
+          </p>
+          <p class="text-sm">
+            I write HTML, CSS and Javascript using Vue, Bootstrap-vue, Vuetify,
+            Tailwind, and Gridsome. Most of my personal projects are hosted on
+            Netlify. Occassionally I still enjoy writing code without any
+            frameworks, just pure <em>vanilla</em>.
+          </p>
         </div>
-      </header>
-      <section>
-        <post-item v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
+        <div class="callout mb-8">
+          <p class="mb-2 text-2xl">
+            I <span class="leading-tight text-3xl">Write</span> articles and
+            blog posts
+          </p>
+          <p class="text-sm">
+            My hope is to help others in the web community learn new things. And
+            to also give back to the community that has taught be so much.
+          </p>
+        </div>
+        <div class="callout mb-4">
+          <p class="mb-2 text-2xl">
+            I <span class="leading-tight text-3xl">Advocate</span> for
+            accessible design and development
+          </p>
+          <p class="text-sm">
+            I promote proper accessible design and development best practices. I
+            also to try teach, or otherwise educate, designers and developers
+            how to create products with accessibility in mind.
+          </p>
+        </div>
       </section>
-      <pagination :info="$page.posts.pageInfo" v-if="$page.posts.pageInfo.totalPages > 1" />
       <site-footer class="py-8 sm:py-16" />
     </main>
   </Layout>
@@ -64,47 +84,11 @@ export default {
       return config;
     },
     ogImageUrl() {
-      return `${this.config.siteUrl}/images/bleda-card.png`;
+      return `${this.config.siteUrl}/images/default.jpg`;
     }
   }
 };
 </script>
-
-<page-query>
-  query Home ($page: Int) {
-    posts: allPost (page: $page, perPage: 6) @paginate {
-      totalCount
-      pageInfo {
-        totalPages
-        currentPage
-      }
-      edges {
-        node {
-          id
-          title
-          timeToRead
-          datetime: date (format: "YYYY-MM-DD HH:mm:ss")
-          content
-          excerpt
-          description
-          path
-          cover
-          tags {
-            id
-            title
-            path
-          }
-          author {
-            id
-            title
-            path
-          }
-        }
-      }
-    }
-  }
-</page-query>
-
 <static-query>
 query {
   metadata {

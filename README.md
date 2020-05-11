@@ -1,4 +1,4 @@
-# Noah Glushien - Blog
+# Noah Glushien
 
 Just some simple posts about different things I'm learning, or opinions I have. Nothing too complicated.
 
