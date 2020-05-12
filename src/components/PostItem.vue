@@ -1,24 +1,30 @@
 <template>
   <article>
     <div class="mx-auto max-w-3xl">
-      <div class="pt-4 pb-8 sm:py-10 border-b border-gray-300">
-        <header class="text-center mb-8">
+      <div class="py-8 sm:py-10 border-b border-gray-300">
+        <header class="text-center font-sans mb-6">
           <time
             :datetime="post.datetime"
-            class="text-blackContrast-100 text-xs mb-2 uppercase"
-            >{{ formatPublishDate(post.datetime) }}</time
+            class="text-blackContrast-100 text-sm mb-2 uppercase"
+            >// {{ formatPublishDate(post.datetime) }} //</time
           >
-          <h2 class="text-3xl sm:text-4xl leading-tight font-sans mb-1 sm:mb-2">
-            <g-link :to="`${post.path}/`" class="text-linkColor font-bold">{{
-              post.title
-            }}</g-link>
+          <h2
+            class="text-2xl sm:text-3xl md:text-2xl leading-tight font-sans mb-1 sm:mb-2 md:mb-0"
+          >
+            <g-link
+              :to="`${post.path}/`"
+              class="text-linkColor font-bold p-0"
+              >{{ post.title }}</g-link
+            >
           </h2>
-          <p class="text-blackContrast-100 leading-normal text-sm sm:text-base">
+          <p
+            class="text-blackContrast-100 leading-normal text-sm sm:text-base md:my-0"
+          >
             <span>{{ post.timeToRead }} min read</span>
           </p>
         </header>
         <p
-          class="leading-normal text-blackContrast-100 text-lg px-2 sm:px-4 md:px-5"
+          class="leading-normal text-blackContrast-100 sm:px-4 md:px-5 font-sans text-md"
           v-html="excerpt(post, 280, ' ...')"
         ></p>
       </div>

@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-appbkg flex flex-col items-stretch px-2 relative">
+  <div
+    class="bg-appbkg flex flex-col sm:h-screen items-stretch px-2 sm:px-4 relative"
+  >
     <!-- this parent div has the ID #app -->
     <app-nav />
     <slot />
