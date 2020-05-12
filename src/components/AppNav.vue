@@ -3,7 +3,7 @@
     class="site-header border-solid border-b border-blackContrast-100 justify-between my-8 pb-4 xl:flex"
   >
     <div class="header-content">
-      <p class="mb-2 mt-0">
+      <p class="leading-none my-0">
         Noah Glushien
       </p>
       <p class="text-sm m-0 leading-snug">
@@ -11,7 +11,7 @@
       </p>
     </div>
     <nav class="sm:flex sm:flex-column">
-      <ul>
+      <ul class="mb-0">
         <li>
           <g-link to="/">Home</g-link>
         </li>
@@ -67,18 +67,4 @@ header {
     }
   }
 }
-// @media (min-width: 1200px) {
-//   .site-header {
-//     display: flex;
-//     padding-bottom: 20px;
-
-//     p {
-//       width: 60%;
-//     }
-
-//     nav {
-//       width: auto;
-//     }
-//   }
-// }
 </style>

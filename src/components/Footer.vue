@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="text-blackContrast-100 text-sm leading-normal flex flex-wrap justify-between mx-auto max-w-3xl px-2 sm:px-12"
+    class="text-blackContrast-100 text-sm leading-normal flex flex-wrap justify-between mx-auto mt-auto px-2 sm:px-0 w-full"
   >
     <div class="w-full sm:w-1/2 mb-4 sm:mb-0">
       <p>

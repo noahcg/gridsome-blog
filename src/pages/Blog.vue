@@ -1,6 +1,12 @@
 <template>
   <Layout>
-    <main>
+    <main class="flex flex-col">
+      <header class="mx-auto py-4 text-left w-full">
+        <h1 class="text-3xl sm:text-4xl leading-tight font-sans font-bold">
+          Blog
+        </h1>
+      </header>
+
       <section>
         <post-item
           v-for="edge in $page.posts.edges"

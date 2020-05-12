@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <main>
-      <header class="mx-auto pb-0 pt-4 text-left">
+    <main class="flex flex-col">
+      <header class="mx-auto pb-0 pt-4 text-left w-full">
         <h1 class="text-3xl sm:text-4xl leading-tight font-sans font-bold">
           Projects
         </h1>
