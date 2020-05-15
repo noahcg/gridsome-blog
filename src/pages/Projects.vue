@@ -14,6 +14,25 @@
             <h3 class="font-bold mb-4 mt-8 text-xl">
               <a
                 class="default-link"
+                href="https://exhibitions.ushmm.org/burmas-path-to-genocide"
+                target="_blank"
+                >Burma's Path to Genocide</a
+              >
+            </h3>
+            <p>
+              This online exhibition explores how the Rohingya, a religious and
+              ethnic minority in Burma, became targets of a sustained campaign
+              of genocide. The United States Holocaust Memorial Museum has
+              raised concerns about the risk of genocide facing the Rohingya
+              since 2013. The Museum determined in 2018 that there was
+              compelling evidence that the Burmese military committed genocide
+              against them.
+            </p>
+          </li>
+          <li>
+            <h3 class="font-bold mb-4 mt-8 text-xl">
+              <a
+                class="default-link"
                 href="https://earlywarningproject.ushmm.org/"
                 target="_blank"
                 >Early Warning Project</a
