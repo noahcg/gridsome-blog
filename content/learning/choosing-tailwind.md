@@ -1,12 +1,12 @@
 ---
 title: Why I Chose Tailwind for My Site
-date: 2020-05-19
+date: 2020-05-19T17:00:00.000Z
 author: Noah Glushien
 tags:
   - tailwind
   - css
   - framework
-cover: "/images/posts/tailwind.jpg"
+cover: /images/posts/tailwind.jpg
 ---
 
 Over the years I've worked with Bootstrap, Bootstrap-Vue, and Vuetify and I honestly have a love of all three frameworks. I don't really have anything negative to say about any of them. There is a common element among them, though, that I'm starting to lean away from. They are all large frameworks with relatively large file sizes, yet I only need to use a small portion for my project. Sometimes I only want to use the utilities that each framework comes with. That's where Tailwind comes in. Its a utility based CSS framework.
