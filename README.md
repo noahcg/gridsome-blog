@@ -5,4 +5,4 @@ Just some simple posts about different things I'm learning, or opinions I have. 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/noahcg/gridsome-blog)
 
 ## Built With
-[Gridsome](https://gridsome.org/) & [Netlify](https://www.netlify.com/)
+[Gridsome](https://gridsome.org/), [Tailwind](https://tailwindcss.com/) & [Netlify](https://www.netlify.com/)
