@@ -81,23 +81,23 @@ export default {
         {
           key: "description",
           name: "description",
-          content: "Introduction to the Bleda blog starter for Gridsome."
+          content: "Projects I have worked on over the years."
         },
 
         { property: "og:type", content: "article" },
-        { property: "og:title", content: "About" },
+        { property: "og:title", content: "Projects" },
         {
           property: "og:description",
-          content: "Introduction to the Bleda blog starter for Gridsome."
+          content: "Projects I have worked on over the years."
         },
-        { property: "og:url", content: `${this.config.siteUrl}/about/` },
+        { property: "og:url", content: `${this.config.siteUrl}/projects/` },
         { property: "og:image", content: "/images/default.jpg" },
 
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: "Projects" },
         {
           name: "twitter:description",
-          content: "Introduction to the Bleda blog starter for Gridsome."
+          content: "Projects I have worked on over the years."
         },
         { name: "twitter:site", content: "@cossssmin" },
         { name: "twitter:creator", content: "@cossssmin" },
