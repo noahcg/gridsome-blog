@@ -1,67 +1,14 @@
 <template>
   <header>
-    <!-- <div
-      v-if="post.cover"
-      class="post-cover overflow-hidden relative"
-      :class="[post.fullscreen ? 'fullscreen' : 'max-h-cover']"
-    >
-      <div
-        class="max-w-xl md:max-w-3xl xl:max-w-4xl text-center px-6 absolute z-10"
-        :class="[
-          post.fullscreen
-            ? 'flex flex-col items-center m-auto inset-0'
-            : 'mx-auto bottom-0 inset-x-0 pb-16'
-        ]"
-      >
-        <div class="m-auto">
-          <p class="text-white text-xs mb-2 uppercase">
-            {{ post.timeToRead }} min read
-          </p>
-          <h1
-            class="text-3xl sm:text-5xl font-sans font-bold leading-tight mb-2 text-white"
-          >
-            {{ post.title }}
-          </h1>
-          <p class="text-white">
-            <span v-if="post.author">
-              <g-link
-                :to="`${post.author.path}/`"
-                class="text-white capitalize border-b border-transparent hover:border-white transition-border-color"
-                >{{ titleCase(post.author.title) }}</g-link
-              >
-              &bull;
-            </span>
-            <time
-              :datetime="post.datetime"
-              class="text-xs mb-2 uppercase capitalize"
-              >{{ formattedPublishDate }}</time
-            >
-          </p>
-        </div>
-      </div>
-      <ClientOnly>
-        <parallax :speed-factor="speedFactor" :sectionHeight="80">
-          <img :src="post.cover" :alt="post.title" />
-        </parallax>
-      </ClientOnly>
-    </div> -->
     <div class="pt-20">
       <div class="max-w-xl md:max-w-3xl xl:max-w-4xl mx-auto text-center">
         <p class="text-blackContrast-100 text-xs mb-2 uppercase">
           {{ post.timeToRead }} min read
         </p>
-        <h1 class="text-3xl sm:text-5xl leading-tight font-sans font-bold mb-2">
+        <h1 class="text-3xl sm:text-4xl leading-tight font-sans font-bold mb-2">
           {{ post.title }}
         </h1>
-        <p class="text-blackContrast-100">
-          <!-- <span v-if="post.author">
-            <g-link
-              :to="`${post.author.path}/`"
-              class="text-blackContrast-100 capitalize border-b border-transparent hover:border-gray-400 transition-border-color"
-              >{{ titleCase(post.author.title) }}</g-link
-            >
-            &bull;
-          </span> -->
+        <p class="leading-none m-0 text-blackContrast-100">
           <time :datetime="post.datetime" class="text-xs mb-2 uppercase">{{
             formattedPublishDate
           }}</time>
