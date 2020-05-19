@@ -8,7 +8,7 @@ module.exports = {
   siteName: "Noah Glushien",
   siteDescription:
     "I'm a front end developer and web accessibility advocate. This site is a place for me to write about anything and everything industry related.",
-  siteUrl: "https://noahcg-blog.netlify.com",
+  siteUrl: "https://www.noahglushien.com",
   titleTemplate: `%s`,
   icon: "./src/favicon.png",
 
@@ -59,13 +59,13 @@ module.exports = {
         feedOptions: {
           title:
             "Noah Glushien, Front End Developer | Web Accessibility Advocate",
-          feed_url: "https://noahcg-blog.netlify.com/feed.xml",
-          site_url: "https://noahcg-blog.netlify.com"
+          feed_url: "https://www.noahglushien.com/feed.xml",
+          site_url: "https://www.noahglushien.com"
         },
         feedItemOptions: node => ({
           title: node.title,
           description: node.description,
-          url: "https://noahcg-blog.netlify.com/" + node.slug,
+          url: "https://www.noahglushien.com/" + node.slug,
           author: node.author,
           date: node.date
         }),
