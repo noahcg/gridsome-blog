@@ -20,9 +20,8 @@
               >
             </h3>
             <p>
-              This online exhibition explores how the Rohingya went from
-              citizens to outsiders—and became targets of a sustained campaign
-              of genocide.
+              This exhibition explores how the Rohingya went from citizens to
+              outsiders—and became targets of a sustained campaign of genocide.
             </p>
           </li>
           <li>
