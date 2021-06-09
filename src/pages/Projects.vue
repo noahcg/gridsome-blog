@@ -16,6 +16,21 @@
                 class="default-link"
                 href="https://earlywarningproject.ushmm.org/"
                 target="_blank"
+                >Burma's Path to Genocide</a
+              >
+            </h3>
+            <p>
+              This online exhibition explores how the Rohingya went from
+              citizens to outsiders—and became targets of a sustained campaign
+              of genocide.
+            </p>
+          </li>
+          <li>
+            <h3 class="font-bold mb-4 mt-8 text-xl">
+              <a
+                class="default-link"
+                href="https://earlywarningproject.ushmm.org/"
+                target="_blank"
                 >Early Warning Project</a
               >
             </h3>
@@ -72,7 +87,7 @@ import { mapState } from "vuex";
 
 export default {
   components: {
-    SiteFooter
+    SiteFooter,
   },
   metaInfo() {
     return {
@@ -81,14 +96,14 @@ export default {
         {
           key: "description",
           name: "description",
-          content: "Projects I have worked on over the years."
+          content: "Projects I have worked on over the years.",
         },
 
         { property: "og:type", content: "article" },
         { property: "og:title", content: "Projects" },
         {
           property: "og:description",
-          content: "Projects I have worked on over the years."
+          content: "Projects I have worked on over the years.",
         },
         { property: "og:url", content: `${this.config.siteUrl}/projects/` },
         { property: "og:image", content: "/images/default.jpg" },
@@ -97,22 +112,22 @@ export default {
         { name: "twitter:title", content: "Projects" },
         {
           name: "twitter:description",
-          content: "Projects I have worked on over the years."
+          content: "Projects I have worked on over the years.",
         },
         { name: "twitter:site", content: "@cossssmin" },
         { name: "twitter:creator", content: "@cossssmin" },
-        { name: "twitter:image", content: "/images/default.jpg" }
-      ]
+        { name: "twitter:image", content: "/images/default.jpg" },
+      ],
     };
   },
   computed: {
     ...mapState(["githubProjects"]),
     config() {
       return config;
-    }
+    },
   },
   mounted() {
     this.$store.dispatch("getGithubProjects");
-  }
+  },
 };
 </script>
