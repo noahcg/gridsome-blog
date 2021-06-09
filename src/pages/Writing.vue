@@ -12,21 +12,24 @@
 
       <section class="font-sans text-md leading-normal list-none mb-10">
         <ul>
-          <!-- <li>
-            <h3 class="font-bold mb-4 mt-8 text-xl">
-              <a href="" class="default-link">Being a Colorblind Designer</a> -
-              A List Apart
-            </h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Obcaecati est saepe omnis ea a nobis quibusdam unde eius! Commodi
-              voluptates asperiores sit, at sequi perferendis molestias atque
-              porro debitis assumenda ipsa unde repellendus nulla inventore
-              blanditiis! Odit earum ipsam facere!
-            </p>
-          </li> -->
           <li>
-            <h3 class="font-bold mb-4 mt-8 text-xl">
+            <h2 class="font-bold mb-4 mt-8 text-xl">
+              <a
+                href="https://alistapart.com/article/a-designers-life-with-color-vision-deficiency/"
+                class="default-link"
+                target="_blank"
+                >Color Craft & Counterpoint: A Designer’s Life with Color Vision
+                Deficiency</a
+              >
+              - A List Apart
+            </h2>
+            <p>
+              An article that details my personal experience being a designer
+              living with color blindness.
+            </p>
+          </li>
+          <li>
+            <h2 class="font-bold mb-4 mt-8 text-xl">
               <a
                 href="https://dev.to/noahcg/reading-position-indicator-in-vue-5cbd"
                 class="default-link"
@@ -34,7 +37,7 @@
                 >How to Create a Reading Position Indicator in Vue</a
               >
               - DEV
-            </h3>
+            </h2>
             <p>
               A quick post about how to set up a reading position indicator in
               VueJS.
@@ -53,7 +56,7 @@ import SiteFooter from "@/components/Footer";
 
 export default {
   components: {
-    SiteFooter
+    SiteFooter,
   },
   metaInfo() {
     return {
@@ -62,14 +65,14 @@ export default {
         {
           key: "description",
           name: "description",
-          content: "A collection of articles and posts I've written"
+          content: "A collection of articles and posts I've written",
         },
 
         { property: "og:type", content: "article" },
         { property: "og:title", content: "Writing" },
         {
           property: "og:description",
-          content: "A collection of articles and posts I've written"
+          content: "A collection of articles and posts I've written",
         },
         { property: "og:url", content: `${this.config.siteUrl}/writing/` },
         { property: "og:image", content: "/images/default.jpg" },
@@ -78,18 +81,18 @@ export default {
         { name: "twitter:title", content: "Writing" },
         {
           name: "twitter:description",
-          content: "A collection of articles and posts I've written"
+          content: "A collection of articles and posts I've written",
         },
         { name: "twitter:site", content: "@cossssmin" },
         { name: "twitter:creator", content: "@cossssmin" },
-        { name: "twitter:image", content: "/images/default.jpg" }
-      ]
+        { name: "twitter:image", content: "/images/default.jpg" },
+      ],
     };
   },
   computed: {
     config() {
       return config;
-    }
-  }
+    },
+  },
 };
 </script>
