@@ -53,13 +53,13 @@
     }
   }
 
-  a {
+  /* a {
     @apply text-blue-500 transition-color;
 
     &:hover {
       @apply text-blue-700;
     }
-  }
+  } */
 
   pre.shiki {
     @apply bg-gray-codeblock !important;
