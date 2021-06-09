@@ -14,7 +14,7 @@
             <h3 class="font-bold mb-4 mt-8 text-xl">
               <a
                 class="default-link"
-                href="https://earlywarningproject.ushmm.org/"
+                href="https://exhibitions.ushmm.org/burmas-path-to-genocide"
                 target="_blank"
                 >Burma's Path to Genocide</a
               >
